@@ -1,86 +1,75 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <title>Portfolio - Djaouida Chikhi</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="UTF-8">
+  <title>Portfolio - Djaouida Chikhi</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="is-preload">
-    <div id="wrapper" class="fade-in">
-        <div id="intro">
-            <h1>PORTFOLIO - DJAOUIDA CHIKHI</h1>
-            <p>Administratrice Réseau & Cybersécurité chez <strong>EssilorLuxottica</strong>, spécialisée dans l’optimisation et la sécurisation des infrastructures IT.</p>
-            <ul class="actions">
-                <li><a href="#about" class="button icon solid solo fa-arrow-down scrolly">Découvrir</a></li>
-            </ul>
-        </div>
+<body>
 
-        <section id="about">
-    <div class="container">
-        <div class="about-image">
-            <img src="images/about-me.jpg" alt="Djaouida Chikhi">
-        </div>
-        <div class="about-text">
-            <h2>À propos</h2>
-            <p>Étudiante en alternance chez <strong>EssilorLuxottica</strong>, je travaille au sein du service réseau comme Administratrice Junior...</p>
-        </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li>
+          <a href="#">Compétences Humaines</a>
+          <ul>
+            <li><a href="adaptation.html">Capacité d'adaptation</a></li>
+            <li><a href="travail-equipe.html">Travail d'équipe</a></li>
+            <li><a href="communication.html">Communication</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Compétences Techniques</a>
+          <ul>
+            <li><a href="gestion-projets.html">Gestion de projets</a></li>
+            <li><a href="automation.html">Automatisation</a></li>
+            <li><a href="solarwinds.html">Supervision SolarWinds</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Réalisations</a>
+          <ul>
+            <li><a href="supervision.html">Supervision et Monitoring IT</a></li>
+            <li><a href="chatbot.html">Chatbot pour le réseau</a></li>
+            <li><a href="chatbot-realisation.html">Réalisation Chatbot</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>PORTFOLIO - DJAOUIDA CHIKHI</h1>
+      <p>Administratrice Réseau & Cybersécurité chez <strong>EssilorLuxottica</strong>, spécialisée dans l’optimisation et la sécurisation des infrastructures IT.</p>
+      <a href="#competences" class="button">Découvrir</a>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <p>Découvrez mes compétences humaines et techniques développées au fil de mon expérience professionnelle.</p>
+    </section>
+
+    <section id="realisations">
+      <h2>Réalisations</h2>
+      <p>Quelques projets réalisés lors de mon parcours en alternance et de mes expériences professionnelles.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>© 2025 Djaouida Chikhi</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/djaouidachikhi" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:chikhidjaouida@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
-</section>
+  </footer>
 
-
-        <section id="skills">
-            <h2>Compétences</h2>
-            <ul>
-                <li>🌐 Réseaux & Sécurité</li>
-                <li>🔍 Cybersécurité & Protection des infrastructures</li>
-                <li>🤖 Automatisation & Scripting (Python, Ansible)</li>
-                <li>☁️ Cloud & Virtualisation</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projets réalisés</h2>
-            <article>
-                <h3>Développement d'un Chatbot Réseau</h3>
-                <p>Création d’un chatbot intégré à SolarWinds et DNA Center pour automatiser le support IT et l’analyse des performances réseau.</p>
-            </article>
-            <article>
-                <h3>Optimisation SD-WAN</h3>
-                <p>Analyse et implémentation d’une architecture SD-WAN pour améliorer la connectivité des sites d’EssilorLuxottica.</p>
-            </article>
-            <article>
-                <h3>Étude de Cas : Compromission Microsoft 365</h3>
-                <p>Analyse détaillée d’une compromission de compte via phishing et mise en place de solutions de cybersécurité.</p>
-            </article>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>📧 Email : <a href="mailto:chikhidjaouida@gmail.com">chikhidjaouida@gmail.com</a></p>
-            <p>🔗 LinkedIn : <a href="https://linkedin.com/in/djaouidachikhi">Djaouida Chikhi</a></p>
-            <p>💻 GitHub : <a href="https://github.com/JAOUI25">JAOUI25</a></p>
-            <form method="post" action="#">
-                <div class="fields">
-                    <div class="field">
-                        <label for="name">Nom</label>
-                        <input type="text" name="name" id="name" />
-                    </div>
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" />
-                    </div>
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="3"></textarea>
-                    </div>
-                </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Envoyer" /></li>
-                </ul>
-            </form>
-        </section>
-    </div>
 </body>
 </html>
