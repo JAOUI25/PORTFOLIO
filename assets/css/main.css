@@ -1,64 +1,95 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
-	background: url('../images/bg.jpg') no-repeat center center fixed;
-	background-size: cover;
-	color: white;
+	font-family: 'Arial', sans-serif;
+	background-color: #000;
+	color: #fff;
   }
   
-  nav ul {
+  .navbar {
+	background-color: #111;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  .menu {
 	list-style: none;
-	background-color: rgba(0, 0, 0, 0.8);
-	overflow: hidden;
-	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: center;
+	margin: 0;
+	display: inline-flex;
   }
   
-  nav ul li {
+  .menu li {
 	position: relative;
   }
   
-  nav ul li a {
-	display: block;
-	padding: 15px 20px;
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
+  .menu > li {
+	margin: 0 20px;
   }
   
-  nav ul li ul {
+  .menu a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+  }
+  
+  .menu li:hover > .submenu {
+	display: block;
+  }
+  
+  .submenu {
 	display: none;
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: #222;
 	top: 100%;
 	left: 0;
-	min-width: 180px;
+	min-width: 200px;
   }
   
-  nav ul li:hover ul {
-	display: block;
+  .submenu li {
+	width: 100%;
   }
   
-  nav ul li ul li a {
+  .submenu a {
 	padding: 10px;
-	text-align: left;
+	color: #fff;
   }
   
   .hero {
+	background-image: url('../images/WhatsApp\ Image\ 2025-04-18\ at\ 14.56.18.jpeg'); /* Ta photo ici */
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	text-align: center;
-	padding: 200px 20px;
   }
   
-  .hero h1 {
-	font-size: 48px;
-	font-weight: bold;
+  .hero-content h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
   }
   
-  .hero p {
-	font-size: 24px;
+  .hero-content p {
+	font-size: 1.5rem;
 	font-style: italic;
+  }
+  
+  .quote {
+	text-align: center;
+	margin: 50px 20px;
+	font-size: 1.2rem;
+	font-style: italic;
+	color: #ccc;
+  }
+  
+  footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #111;
+	font-size: 0.9rem;
   }
   
