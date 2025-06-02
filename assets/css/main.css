@@ -1,74 +1,77 @@
 body {
-	background-color: #8B4513; /* marron */
-	color: white;
-	font-family: Arial, sans-serif;
 	margin: 0;
-	padding: 0;
-  }
-  
-  nav {
-	background-color: #4B2E19;
-	padding: 10px 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f3eee8; /* Fond marron très clair */
   }
   
   .navbar {
-	list-style-type: none;
+	background-color: #4b2e19; /* Marron foncé */
+	overflow: hidden;
+  }
+  
+  .menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 	display: flex;
 	justify-content: center;
-	padding: 0;
-	margin: 0;
   }
   
-  .navbar li {
+  .menu > li {
 	position: relative;
-	margin: 0 20px;
   }
   
-  .navbar a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	padding: 10px;
+  .menu > li > a {
 	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	transition: background 0.3s, transform 0.3s;
   }
   
-  .navbar .dropdown-content {
+  .menu > li > a:hover {
+	background-color: #61351d;
+	transform: scale(1.05);
+  }
+  
+  .submenu {
 	display: none;
 	position: absolute;
-	background-color: #222;
-	margin-top: 10px;
-	border-radius: 5px;
+	top: 100%;
+	left: 0;
+	background-color: #61351d;
+	padding: 0;
+	min-width: 220px;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
   }
   
-  .navbar .dropdown:hover .dropdown-content {
+  .submenu li {
+	list-style: none;
+  }
+  
+  .submenu li a {
+	display: block;
+	padding: 12px 16px;
+	color: white;
+	text-decoration: none;
+	transition: background 0.3s;
+  }
+  
+  .menu > li:hover .submenu {
 	display: block;
   }
   
-  .navbar .dropdown-content li {
-	padding: 8px 12px;
+  .submenu li a:hover {
+	background-color: #7b4523;
   }
   
-  .navbar .dropdown-content li a {
-	color: white;
-  }
-  
-  .hero {
-	text-align: center;
+  footer {
 	margin-top: 100px;
-  }
-  
-  .hero h1 {
-	font-size: 48px;
-	margin-bottom: 10px;
-  }
-  
-  .hero p {
-	font-size: 24px;
-	font-style: italic;
-  }
-  
-  /* Liens hover */
-  .navbar a:hover {
-	color: #FFA500;
+	text-align: center;
+	font-size: 14px;
+	color: #4b2e19;
+	padding: 10px;
   }
   
