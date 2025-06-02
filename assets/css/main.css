@@ -1,119 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    color: white;
-    background-color: #8B4513; /* marron */
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar */
-header {
-    width: 100%;
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
-nav .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-nav .menu > li {
-    position: relative;
-}
-
-nav .menu > li + li {
-    border-left: 1px solid white;
-    padding-left: 20px;
-    margin-left: 20px;
-}
-
-nav .menu li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 8px 15px;
-    transition: all 0.3s ease;
-}
-
-/* Hover sur menu principal */
-nav .menu li:hover > a {
-    color: #f0ad4e;
-}
-
-/* Sous-menu caché */
-nav .menu li .submenu {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 10px 0;
-    border-radius: 5px;
-    min-width: 220px;
-}
-
-/* Afficher sous-menu au hover */
-nav .menu li:hover .submenu {
-    display: block;
-}
-
-/* Style des sous-menus */
-nav .menu li .submenu li {
-    padding: 10px 20px;
-}
-
-nav .menu li .submenu li a {
-    color: white;
-    font-size: 16px;
-    text-align: left;
-    display: block;
-    width: 100%;
-    transition: background 0.3s ease;
-}
-
-/* Hover sur sous-menu */
-nav .menu li .submenu li a:hover {
-    background-color: #333;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 24px;
-    font-style: italic;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-}
+	background-color: #8B4513; /* marron */
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav {
+	background-color: #4B2E19;
+	padding: 10px 0;
+  }
+  
+  .navbar {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .navbar li {
+	position: relative;
+	margin: 0 20px;
+  }
+  
+  .navbar a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	display: block;
+  }
+  
+  .navbar .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #222;
+	margin-top: 10px;
+	border-radius: 5px;
+  }
+  
+  .navbar .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  .navbar .dropdown-content li {
+	padding: 8px 12px;
+  }
+  
+  .navbar .dropdown-content li a {
+	color: white;
+  }
+  
+  .hero {
+	text-align: center;
+	margin-top: 100px;
+  }
+  
+  .hero h1 {
+	font-size: 48px;
+	margin-bottom: 10px;
+  }
+  
+  .hero p {
+	font-size: 24px;
+	font-style: italic;
+  }
+  
+  /* Liens hover */
+  .navbar a:hover {
+	color: #FFA500;
+  }
+  
