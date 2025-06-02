@@ -7,9 +7,10 @@
 body {
     font-family: Arial, sans-serif;
     color: white;
-    background: url("../images/JAOUI.jpeg") no-repeat center center fixed;
-    background-size: cover;
+    background-color: #8B4513; /* marron */
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar */
